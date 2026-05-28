@@ -37,10 +37,10 @@ order_items AS (
 
 reviews AS (
     SELECT
-        order_id,
-        MAX(review_score) AS review_score
-    FROM {{ ref('src_order_reviews') }}
-    GROUP BY order_id
+  order_id,
+  MAX(review_score) AS review_score
+FROM {{ ref('src_order_reviews') }}
+GROUP BY order_id
 )
 
 SELECT
@@ -60,7 +60,7 @@ SELECT
     o.estimated_delivery_ts,
 
     -- revenue
-    p.total_payment_value,
+    COALESCE(p.total_payment_value, 0) AS total_payment_value,
 
     -- item metrics
     oi.total_items,

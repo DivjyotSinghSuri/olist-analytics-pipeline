@@ -1,5 +1,6 @@
 models:
   - name: fact_orders
+    description: "Order-level fact table combining orders, payments, items, and reviews."
     columns:
       - name: order_id
         tests:
@@ -12,5 +13,8 @@ models:
   - name: src_orders
     columns:
       - name: order_id
+        description: "Unique identifier for each order"
         tests:
           - not_null
+
+        

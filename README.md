@@ -34,9 +34,9 @@ S3 → Snowflake (Raw) → dbt (Staging → Fact → Marts) → Tableau Dashboar
 
 ## Dashboard
 
-![Dashboard](./dashboard.png)
+![Dashboard](./Dashboard.png)
 
-🔗 **Dashboard Link**: *(Add your Tableau Public link here)*
+🔗 **Dashboard Link**: *[(https://public.tableau.com/app/profile/divjyot.singh.suri/viz/OlistPerformanceDashboard_17800792544970/FinalDashboard?publish=yes)]*
 
 ### Key Metrics
 
